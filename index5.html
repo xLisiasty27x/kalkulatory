@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Kalkulator 24/7</title>
+		<link rel="stylesheet" href="styl3.css" type="text/css"/>
+	</head>
+	<body>
+			<div id="banner_l">
+			<h2><marquee behavior="alternate" direction="right">Kalkulator 24/7</marquee></h2>
+			
+			
+			
+			</div>
+			<div class="glowny">
+				<a href="index3.html"><img src="trojkat.png" alt="trojkat" align="center" height="250" width="375"/></a>
+				<p><h3>Pole trójkąta, kwadratu oraz prostokąta</h3></p>
+			</div>
+			<div class="glowny">
+				<a href="index2.html"><img src="graniasto.jpg" alt="granysslup" align="center" height="250" width="375"/></a>
+				<br/>
+				<p><h3>Objętość graniastosłupa</h3></p>
+
+			
+			</div>
+			<div id="glowny_s">
+				<p><h3>Funkcja Liniowa</h3></p>
+				a: <input type="number" id="a" value="" /> <br />
+				b: <input type="number" id="b" value="" /> <br />
+
+				<br /><br />
+				<button onclick=oblicz()>Oblicz</button>
+				<p id="x"> </p>
+				
+			</div>
+			<div class="glowny">
+				<a href="index4.html"><img src="srednia.png" alt="sredniatako" align="center" height="250" width="375"/></a>
+				<p><h3>Zliczanie Średniej ocen z 5 przedmiotów</h3></p>
+
+			</div>
+			<div class="glowny">
+				<a href="index1.html"><img src="kalkpros.png" alt="kalkuuu" align="center" height="250" width="375"/></a>
+				<p><h3>Kalkulator prosty</h3></p>
+	
+
+			</div>
+		
+			<div id="stopka_p">
+				<br/>
+				Nataniel Ferdek 4TIa gr.1
+				
+			</div>
+			<div id="doldol">
+			</div>
+		<script>
+		 function oblicz(){
+                var a=document.getElementById("a").value;
+				var b=document.getElementById("b").value;
+				
+				
+				a=parseFloat(a)
+                b=parseFloat(b)
+				
+				
+                if (a != 0){
+					x = -b / a
+					document.getElementById("x").innerHTML = "x wynosi: " + x ;
+				}
+				else if (b == 0){
+					document.getElementById("x").innerHTML = "x = nieskończenie wiele rozwiązań"
+				}
+				else {
+					document.getElementById("x").innerHTML = "x = brak rozwiązania"
+				}
+				
+				}
+		</script>
+	</body>
+</html>

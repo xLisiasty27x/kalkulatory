@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Kalkulator 24/7</title>
+		<link rel="stylesheet" href="styl3.css" type="text/css"/>
+	</head>
+	<body>
+			<div id="banner_l">
+			<h2><marquee behavior="alternate" direction="right">Kalkulator 24/7</marquee></h2>
+			
+			
+			
+			</div>
+			<div class="glowny">
+				<a href="index1.html"><img src="kalkpros.png" alt="trojkat" align="center" height="250" width="375"/></a>
+				<p><h3>Kalkulator prosty</h3></p>
+			</div>
+			<div class="glowny">
+				<a href="index3.html"><img src="trojkat.png" alt="trojkat" align="center" height="250" width="375"/></a>
+				<p><h3>Pole trójkąta, kwadratu oraz prostokąta</h3></p>
+		
+
+			
+			</div>
+			<div id="glowny_s">
+			<p><h3>Tu objetosc graniast</h3></p>
+			<p>V = Pp * h</p>
+				a: <input type="number" id="a"/><br />
+				b: <input type="number" id="b"/><br />
+				h: <input type="number" id="h"/><br />
+				<br/>
+					<button onclick=pros()>Objętość z Prostokątem w podstawie</button>
+					<button onclick=kwad()>Objętość z Kwadratem w podstawie</button>
+					<button onclick=troj()>Objętość z Trójkątem w podstawie</button>
+				<p id="wynik"></p>
+			</div>
+			<div class="glowny">
+				<a href="index4.html"><img src="srednia.png" alt="sredniatako" align="center" height="250" width="375"/></a>
+				<p><h3>Zliczanie Średniej ocen z 5 przedmiotów</h3></p>
+
+			</div>
+			<div class="glowny">
+				<a href="index5.html"><img src="funkcja.jpg" alt="funkcyjaa" align="center" height="250" width="375"/></a>
+				<p><h3>Funkcja Liniowa</h3></p>
+	
+
+			</div>
+			<div id="stopka_p">
+				<br/>
+				Nataniel Ferdek 4TIa gr.1
+				
+			</div>
+			<div id="doldol">
+			</div>
+		<script>
+		function pros(){
+				var a=document.getElementById("a").value;
+				var b=document.getElementById("b").value;
+				var h=document.getElementById("h").value;
+					
+				a = parseFloat(a)
+				b = parseFloat(b)
+				h = parseFloat(h)
+				
+				var objeta1 = a*b*h;
+				
+
+				
+			
+				document.getElementById("wynik").innerHTML = "Objętość: "+ "a<sup>2</sup>*h" + " = " + objeta1;
+		}
+		function kwad(){
+				var a=document.getElementById("a").value;
+				var h=document.getElementById("h").value;
+					
+				a = parseFloat(a)
+				h = parseFloat(h)
+				
+				var objeta = a*a*h;
+				
+
+				
+			
+				document.getElementById("wynik").innerHTML = "Objętość: "+ "a*b*h"+ " = "+ objeta;
+		}
+		function troj(){
+				var a=document.getElementById("a").value;
+				var b=document.getElementById("b").value;
+				var h=document.getElementById("h").value;
+					
+				a = parseFloat(a)
+				b = parseFloat(b)
+				h = parseFloat(h)
+				
+				var objeta1l = (a*b/2)*h;
+				
+
+				
+			
+				document.getElementById("wynik").innerHTML = "Objętość: "+ "(a*b/2)*h" + " = " + objeta1l;
+		}
+		</script>
+	</body>
+</html>

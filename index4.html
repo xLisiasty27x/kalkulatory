@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Kalkulator 24/7</title>
+		<link rel="stylesheet" href="styl3.css" type="text/css"/>
+	</head>
+	<body>
+			<div id="banner_l">
+			<h2><marquee behavior="alternate" direction="right">Kalkulator 24/7</marquee></h2>
+			
+			
+			
+			</div>
+			<div class="glowny">
+				<a href="index3.html"><img src="trojkat.png" alt="trojkat" align="center" height="250" width="375"/></a>
+				<p><h3>Pole trójkąta, kwadratu oraz prostokąta</h3></p>
+			</div>
+			<div class="glowny">
+				<a href="index2.html"><img src="graniasto.jpg" alt="granysslup" align="center" height="250" width="375"/></a>
+				<br/>
+				<p><h3>Objętość graniastosłupa</h3></p>
+
+			
+			</div>
+			<div id="glowny_s">
+				<p><h3>Zliczanie Średniej ocen z 5 przedmiotów</h3></p>
+				Polski: <input type="number" id="a" value=" " /> <br />
+				Angielski: <input type="number" id="b" value=" " /> <br />
+				Matematyka: <input type="number" id="c" value=" " /> <br />
+				Informatyka: <input type="number" id="d" value=" " /> <br />
+				Geografia: <input type="number" id="e" value=" " /> <br />
+				<br /><br />
+		
+		
+				<button onclick=oblicz()>Oblicz</button>
+				<div id="wynik"> </div>
+		
+		
+	
+		
+			</div>
+			<div class="glowny">
+				<a href="index1.html"><img src="kalkpros.png" alt="kalkuu" align="center" height="250" width="375"/></a>
+				<p><h3>Kalkulator prosty</h3></p>
+
+			</div>
+			<div class="glowny">
+				<a href="index5.html"><img src="funkcja.jpg" alt="funkcyjaa" align="center" height="250" width="375"/></a>
+				<p><h3>Funkcja Liniowa</h3></p>
+	
+
+			</div>
+			<div id="stopka_p">
+				<br/>
+				Nataniel Ferdek 4TIa gr.1
+				
+			</div>
+			<div id="doldol">
+			</div>
+		<script>
+		function oblicz(){
+				var a=document.getElementById("a").value;
+				var b=document.getElementById("b").value;
+				var c=document.getElementById("c").value;
+				var d=document.getElementById("d").value;
+				var e=document.getElementById("e").value;
+		
+					
+				a = parseFloat(a)
+				b = parseFloat(b)
+				c = parseFloat(c)
+				d = parseFloat(d)
+				e = parseFloat(e)
+				
+				
+				var wynik = (a+b+c+d+e)/5;
+				
+				document.getElementById("wynik").innerHTML = "Średnia wynosi: "+ a + " + " + b + " + " + c + " + " + d + " + " + e + " : 5 "+ " = " + wynik;
+				
+				}
+			
+		</script>
+	</body>
+</html>

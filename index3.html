@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Kalkulator 24/7</title>
+		<link rel="stylesheet" href="styl3.css" type="text/css"/>
+	</head>
+	<body>
+			<div id="banner_l">
+			<h2><marquee behavior="alternate" direction="right">Kalkulator 24/7</marquee></h2>
+			
+			
+			
+			</div>
+			<div class="glowny">
+				<a href="index1.html"><img src="kalkpros.png" alt="kalkuu" align="center" height="250" width="375"/></a>
+				<p><h3>Kalkulator prosty</h3></p>
+			</div>
+			<div class="glowny">
+				<a href="index2.html"><img src="graniasto.jpg" alt="granysslup" align="center" height="250" width="375"/></a>
+				<br/>
+				<p><h3>Objętość graniastosłupa</h3></p>
+
+			
+			</div>
+			<div id="glowny_s">
+				<p><h3>Obliczanie Pola figur</h3><p>
+				a: <input type="number" id="a" value=" " />Kwadrat/Prostokąt/Trójkąt<br />
+				b: <input type="number" id="b" value=" " />Prostokąt/Trójkąt <br />
+				c: <input type="number" id="c" value=" " />Trójkąt <br />
+				h: <input type="number" id="h" value=" " />Trójkąt <br />
+				<br /><br />
+				<button onclick=oblicz2()>Kwadrat</button>
+				<button onclick=oblicz()>Prostokąt</button>
+				<button onclick=oblicz1()>Trójkąt</button>
+				<p id="wynik"></p>
+			</div>
+			<div class="glowny">
+				<a href="index4.html"><img src="srednia.png" alt="sredniatako" align="center" height="250" width="375"/></a>
+				<p><h3>Zliczanie Średniej ocen z 5 przedmiotów</h3></p>
+
+			</div>
+			<div class="glowny">
+				<a href="index5.html"><img src="funkcja.jpg" alt="funkcyjaa" align="center" height="250" width="375"/></a>
+				<p><h3>Funkcja Liniowa</h3></p>
+	
+
+			</div>
+			<div id="stopka_p">
+				<br/>
+				Nataniel Ferdek 4TIa gr.1
+				
+			</div>
+			<div id="doldol">
+			</div>
+		<script>
+		function oblicz(){
+				var a=document.getElementById("a").value;
+				var b=document.getElementById("b").value;
+				
+					
+				a = parseFloat(a)
+				b = parseFloat(b)
+				
+				
+				var poleprosto = a*b;
+				var obwod = a*2+b*2
+
+				
+			
+				document.getElementById("wynik").innerHTML = "Pole: " + a + " * " + b + " = " + poleprosto + "<br/>" + " Obwód: " + " 2* "+ a + " + " + " 2* " + b + " = "  + obwod;
+		}
+		function oblicz1(){
+				var a=document.getElementById("a").value;
+				var b=document.getElementById("b").value;
+				var c=document.getElementById("c").value;
+				var b=document.getElementById("h").value;
+				
+					
+				a = parseFloat(a)
+				b = parseFloat(b)
+				c = parseFloat(c)
+				h = parseFloat(h)
+		
+		
+		
+				var poletrojkata = a*b/2;
+				var obwodzik = a+b+c;
+				
+		
+				document.getElementById("wynik").innerHTML = "Pole Trójkąta: " + a + " * " + b + "/2 "+ " = " + poletrojkata + "<br/>" + " Obwód: " + obwodzik;
+		
+		}
+		function oblicz2(){
+				var a=document.getElementById("a").value;
+				
+				a = parseFloat(a)
+				
+				
+				var kwad = a*a;
+				var obwodik = 4*a;
+
+				
+			
+				document.getElementById("wynik").innerHTML = "Pole: " + a + "<sup> 2</sup> " +  " = " + kwad + "<br/>" + " Obwód: "  + obwodik;
+		}
+		</script>
+	</body>
+</html>
